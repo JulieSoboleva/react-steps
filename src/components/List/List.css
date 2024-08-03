@@ -1,0 +1,19 @@
+.list {
+    margin-top: 29px;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 45px;
+    padding-bottom: 27px;
+}
+
+.list-wrap {
+    padding-top: 27px;
+    padding-left: 35px;
+    padding-right: 57px;
+    border: 1px solid #3F3F3F;
+    border-radius: 21px;
+}

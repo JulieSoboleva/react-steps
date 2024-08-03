@@ -1,0 +1,26 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 36px;
+}
+
+.buttons {
+    
+    background-color: inherit;
+}
+
+.btn {
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.edit {
+    color: blue;
+}
+
+.delete {
+    color: red;
+}

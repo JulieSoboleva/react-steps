@@ -1,0 +1,26 @@
+.form {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.form input,
+.form_btn-ok {
+    border: 1px solid #3F3F3F;
+    border-radius: 11px;
+}
+
+.form input {
+    width: 185px;
+    height: 44px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.form_btn-ok {
+    background-color: inherit;
+    text-transform: uppercase;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 46px;
+    cursor: pointer;
+}

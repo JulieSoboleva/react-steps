@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container {
+  width: 517px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
