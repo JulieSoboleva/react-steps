@@ -43,16 +43,7 @@ export default function Form({ list }: IWorkouts) {
             const index = workouts.findIndex(
                 (workout) => getTime(workout.date) <= getTime(form.date)
             );
-            if (index === -1) {
-                updatedWorkouts = [
-                    ...workouts.slice(0, workouts.length),
-                    {
-                        id: uuid4(),
-                        date: form.date,
-                        distance: form.distance,
-                    },
-                ];
-            } else if (getTime(workouts[index].date) === getTime(form.date)) {
+            if (index !== -1 && getTime(workouts[index].date) === getTime(form.date)) {
                 updatedWorkouts = [
                     ...workouts.slice(0, index),
                     {
@@ -64,14 +55,14 @@ export default function Form({ list }: IWorkouts) {
                 ];
             } else {
                 updatedWorkouts = [
-                    ...workouts.slice(0, index),
+                    ...workouts.slice(0, workouts.length),
                     {
                         id: uuid4(),
                         date: form.date,
                         distance: form.distance,
                     },
-                    ...workouts.slice(index),
                 ];
+                updatedWorkouts = updatedWorkouts.sort((a, b) => getTime(b.date) - getTime(a.date));
             }
         }
         setWorkouts(updatedWorkouts);
